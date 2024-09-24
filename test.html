@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html lang="de"> 
+<head> <meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<title>Links Liste</title> 
+<!-- Einbinden von Bootstrap für modernes Styling --> 
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<style> body { background-color: #f8f9fa; font-family: Arial, sans-serif; } .container { margin-top: 50px; } .link-button { margin: 10px 0; padding: 10px 20px; text-align: center; color: #fff; background-color: #007bff; border: none; border-radius: 5px; display: block; text-decoration: none; font-size: 16px; } .link-button:hover { background-color: #0056b3; } </style> 
+</head> 
+<body> 
+<div class="container"> 
+<h2 class="text-center">Links Liste</h2> 
+  <div id="links-container" class="d-flex flex-column align-items-center">
+  </div> 
+</div> 
+<script> 
+const links = [ 
+{ url: "https://link.clashroyale.com/invite/friend/de?tag=GJGJQ028Y&token=cwfrf97g&platform=android", name: "Abdula" } 
+]; 
+const container = document.getElementById('links-container'); 
+links.forEach((data) => { const linkButton = document.createElement("a"); 
+  linkButton.href = data.url; 
+  linkButton.innerText = data.name; 
+  linkButton.className = "link-button"; 
+  container.appendChild(linkButton); 
+  }); 
+</script> 
+<!-- Bootstrap JavaScript und jQuery für interaktive Komponenten --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+</body> 
+</html> 
